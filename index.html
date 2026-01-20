@@ -144,7 +144,7 @@ footer{text-align:center;padding:22px;background:var(--card);font-size:14px;}
 <div class="circuit"></div>
 
 <header>
- <div class="logo">ELAVARASU.AI</div>
+ <div class="logo">ELAVARASU.P</div>
  <nav>
   <a href="#home">Home</a>
   <a href="#about">About</a>
@@ -162,7 +162,7 @@ footer{text-align:center;padding:22px;background:var(--card);font-size:14px;}
   <a href="#projects" class="btn">Explore My Work</a>
   <a href="resume.pdf" class="btn" download style="margin-left:10px;">Download Resume</a>
   <div class="socials">
-    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://github.com/Elavarasu21" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://www.linkedin.com/in/elavarasu-p-89a38734a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
  </div>
@@ -233,14 +233,17 @@ footer{text-align:center;padding:22px;background:var(--card);font-size:14px;}
 <!-- CONTACT (Page 5) -->
 <section id="contact" class="contact">
  <h2>Get In Touch</h2>
- <form id="contactForm" action="https://formsubmit.co/gowthamelavarasu.p@gmail.com" method="POST">
+<form action="https://formsubmit.co/gowthamelavarasu.p@gmail.com" method="POST">
   <input type="text" name="name" placeholder="Your Name" required />
   <input type="email" name="email" placeholder="Your Email" required />
   <textarea name="message" placeholder="Tell me about your project or opportunity" required></textarea>
+  <!-- Prevent spam (recommended) -->
+  <input type="hidden" name="_captcha" value="true">
+  <!-- Redirect after success (optional) -->
+  <input type="hidden" name="_next" value="https://elavarasu21.github.io/my-port/">
   <button type="submit" class="submit-btn">Send Message</button>
- </form>
+</form>
 </section>
-
 <footer>&copy; <span id="year"></span> Elavarasu | AI Portfolio</footer>
 
 <script>
@@ -254,3 +257,4 @@ document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
+
